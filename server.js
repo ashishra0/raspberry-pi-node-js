@@ -36,7 +36,7 @@ function sendReqBackToGlitch() {
 app.post('/', (req, res) => {
   sendReqBackToGlitch()
   console.log('request received from glitch')
-  res.send('ok')
+  res.sendStatus(200)
 })
 
 // run the server on port 3000
