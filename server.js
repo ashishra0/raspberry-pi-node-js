@@ -16,14 +16,12 @@ smee.start()
 const app = express();
 
 // payload
-const data = {
-  "status": "There is power in the house💡"
-}
+const data = "There is power in the house💡";
 
 // helper methods
 function sendReqBackToGlitch() {
   axios
-    .post("https://crimson-north-ceiling.glitch.me", data)
+    .post("http://localhost:8000/", data)
     .then(res => {
       return res;
     })
