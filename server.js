@@ -9,6 +9,8 @@ const smee = new SmeeClient({
   logger: console
 })
 
+let count = 0
+
 // start forwarding to localhost
 smee.start()
 
@@ -33,7 +35,7 @@ function sendReqBackToGlitch() {
 // routes
 app.post('/', (req, res) => {
   // sendReqBackToGlitch()
-  let count = 1
+    count += 1
   console.log("Request received,", count)
 })
 
