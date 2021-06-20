@@ -4,7 +4,7 @@ const SmeeClient = require('smee-client')
 
 // smee webhook client
 const smee = new SmeeClient({
-  source: 'https://smee.io/mQAzpDaQKOQpXyr0',
+  source: 'https://smee.io/Y4NJTCDjHI8UawNi',
   target: 'http://localhost:3000/',
   logger: console
 })
@@ -32,9 +32,9 @@ function sendReqBackToGlitch() {
 
 // routes
 app.post('/', (req, res) => {
-  sendReqBackToGlitch()
-  console.log('request received from glitch')
-  res.sendStatus(200)
+  // sendReqBackToGlitch()
+  let count = 1
+  console.log("Request received,", count)
 })
 
 // run the server on port 3000
